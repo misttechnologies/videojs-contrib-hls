@@ -6,4 +6,6 @@ dist/*
 *.ipr
 *.iws
 *.swp
+tmp/
 tmp/**.*.swo
+test.html

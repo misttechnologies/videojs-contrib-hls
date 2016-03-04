@@ -1079,7 +1079,7 @@ videojs.Hls.prototype.fetchKeys_ = function() {
       keyXhr = videojs.Hls.xhr({
         url: this.playlistUriToUrl(key.uri),
         responseType: 'arraybuffer',
-        withCredentials: settings.withCredentials
+        withCredentials: settings.withCredentials || settings.withCredentialsForKeys
       }, receiveKey(key));
       break;
     }
